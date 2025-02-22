@@ -17,8 +17,7 @@ function extern() {
   
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("demo").innerHTML =
-      this.responseText;
+      lert(this.responseText);
     }
   };
   xhttp.open("GET", "xmlhttp_info.php?lang=", true);
